@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: var(--primary);
+    background-color:black;
 }
 
 .container {
@@ -43,7 +43,7 @@ nav {
 }
 
 .menu li a {
-    color:pink;
+    color:var(--secondary);
     cursor: pointer;
 }
 
@@ -82,7 +82,6 @@ input::placeholder {
     color: gray;
 }
 
-/* hero section style */
 .hero_section .row {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +92,7 @@ input::placeholder {
 
 .col_hero_info h1 {
     font-size: 30px;
-    color: pink;
+    color:whitesmoke
 }
 
 .col_hero_info span {
@@ -103,32 +102,15 @@ input::placeholder {
 
 .col_hero_info p {
     font-size: 25px;
-    color:black;
+    color: pink;
     width: 400px;
     padding: 20px 0px;
 }
 
-.btn {
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
-    color: var(--secondary);
-    background-color: var(--primary);
-    border: 3px solid var(--secondary);
-    border-radius: 10px;
-}
-
-.btn:hover {
-    background-color: var(rgba(212, 48, 76, 0.87));
-    transition: 0.5s ease;
-    color: var(--primary);
-}
-
 
 #full_row {
-    background-image: url(tail-removebg-preview.png);
-    background-size:50%;
-    background-repeat: no-repeat;
+    background-image: url(glasses2.png);
+    background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
@@ -167,11 +149,27 @@ input::placeholder {
 .about_info{
     padding:100px 0px;
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    margin: auto;
 }
 .about_info h1{
     font-size: 100px;
-    color: var(--textColor);
+    color:var(--secondary);
     font-weight: bold;
+}
+    .about_info p{
+        padding-top:25px;
+        padding-left: 90px;
+        font-size: 25px;
+        color:var(--textColor);
 
 }
 .about_info p::before{
@@ -188,7 +186,7 @@ input::placeholder {
 /* skill section style  */
 #skill_section h1{
     text-align: center;
-    color:var(--textColor);
+    color:var(--secondary);
     font-size: 50px;
 }
 .skill_part_one{
@@ -205,13 +203,13 @@ input::placeholder {
     width:270px;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #c54e62;
+    background-color:var(--secondary);
     border-radius: 20px;
     margin-top:30px;
     cursor: pointer;
 }
 .skill_card:hover{
-    background-color: var(--secondary);
+    background-color: #3D3E42;
     transition: 0.6s ease;
 }
 .skill_card h3{
@@ -245,41 +243,46 @@ input::placeholder {
     padding: 10px 30px;
     border-radius: 10px;
 }
-
-/* experience section style  */
-#experience_section{
-    background-color: #3D3E42;
+/* experience section style */
+#Experience_section {
+    background-color: black;
     padding: 80px 0px;
 }
-#experience_section .exp_title{
-    color:#fff;
+
+#Experience_section .exp_title {
+    color: var(--secondary);
     font-size: 50px;
     margin-bottom: 50px;
+    background-color:grey;
 }
-.experience{
+
+.experience {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 0px;
 }
-.experience_info{
+
+.experience_info {
     display: flex;
     justify-content: center;
     width: 800px;
     position: relative;
 }
-.experience_info h1{
+
+.experience_info h1 {
     margin-right: 50px;
-    background-color: gray;
+    background-color:gray;
     height: 45px;
-    padding:5px 10px;
+    padding: 5px 10px;
     font-size: 30px;
-    color:#fff;
+    color:var(--secondary);
     position: relative;
 }
-.experience_info h1::after{
+
+.experience_info h1::after {
     content: "";
-    width:0px;
+    width: 0px;
     height: 0px;
     border-style: solid;
     border-color: transparent gray transparent transparent;
@@ -287,42 +290,31 @@ input::placeholder {
     border-width: 23px;
     position: absolute;
     right: -45px;
-    top:0;
+    top: 0;
 }
+
 .experience_contents h2{
-    color:#fff;
+    color:var(--secondary);
     font-size: 35px;
     padding: 0 20px 0 30px;
     position: relative;
 }
 .experience_contents h3{
-    color:#fff;
+    color:var(--secondary);
     font-size: 25px;
 }
+
 .experience_contents p{
-    color:#fff;
+    color:var(--secondary);
     font-size: 20px;
     padding-top: 15px;
 }
-.experience_contents h2::before{
-    content: "";
-    width: 30px;
-    height: 30px;
-    display: block;
-    border-radius: 50%;
-    background-color: var(--secondary);
-    box-shadow: -5px 3px 50px 7px #997e1e;
-    position: absolute;
-    top:10px;
-    left: -15px;
-}
-.experience_content{
-    margin-top:15px;
+.experience_content {
+    margin-top: 15px;
     border-left: 3px solid #fff;
     padding: 0 20px 0 30px;
 }
 
-/* testimonial section style  */
 
 
 
@@ -340,7 +332,7 @@ input::placeholder {
     position: relative;
 }
 .contact_title h1{
-    color:#fff;
+    color:var(--secondary);
     font-size: 50px;
     margin-top: -125px;
 }
@@ -419,7 +411,9 @@ input::placeholder {
     font-size:20px;
     color:var(--secondary);
     padding: 100px 0px;
+
 }
+
 
 /*******************
     responsive area
@@ -475,22 +469,7 @@ input::placeholder {
     margin-bottom: 20px;
 }
 
-/* Testimonial section  */
-.testimonial_info p::before{
-    display:none;
-}
-.testimonial_info{
-    width: auto;
-    padding: 0px 30px;
-}
-.testimonial_info p{
-    padding-left: 0px;
-}
-.testimonial_info h5, h6{
-    padding-left: 0px;
-}
-.testimonial_img{
-    display: none;
+
 }
 
 /* contact section  */
